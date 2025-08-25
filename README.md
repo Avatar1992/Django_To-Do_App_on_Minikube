@@ -31,13 +31,13 @@ minikube-django-todo/
 
 ### 1 Start Minikube
 
-minikube start --memory=4096 --cpus=2
+minikube start
 kubectl get nodes
 
 ### 2. Build Docker Image
 
-eval $(minikube docker-env)
 docker build -t django-todo-app ./django-todo-app
+or pull from docker hub
 
 ### 3. Deploy Django To-Do App
 
