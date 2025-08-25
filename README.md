@@ -29,37 +29,32 @@ minikube-django-todo/
 
 ## ⚙️ Setup Instructions
 
-### 1. Clone Repository
-```bash
-git clone https://github.com/<your-username>/minikube-django-todo.git
-cd minikube-django-todo
-
-### 2. Start Minikube
+### 1 Start Minikube
 
 minikube start --memory=4096 --cpus=2
 kubectl get nodes
 
-### 3. Build Docker Image
+### 2. Build Docker Image
 
 eval $(minikube docker-env)
 docker build -t django-todo-app ./django-todo-app
 
-### 4. Deploy Django To-Do App
+### 3. Deploy Django To-Do App
 
 kubectl apply -f k8s-manifests/django-deployment.yaml
 kubectl apply -f k8s-manifests/django-service.yaml
 
-### 5. Access Django Application
+### 4. Access Django Application
 
 minikube service django-service
 
-### 6. Deploy Monitoring (Prometheus + Grafana)
+### 5. Deploy Monitoring (Prometheus + Grafana)
 
 kubectl apply -f k8s-manifests/prometheus-deployment.yaml
 kubectl apply -f k8s-manifests/grafana-deployment.yaml
 kubectl apply -f k8s-manifests/monitoring-service.yaml
 
-### 7. Access Monitoring Tools
+### 6. Access Monitoring Tools
 
     Prometheus
 
