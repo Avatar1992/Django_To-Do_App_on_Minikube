@@ -23,42 +23,56 @@ minikube-django-todo/
 │── README.md
 
 
----
+
 
 ## ⚙️ Setup Instructions
 
-###  Clone Repository
+### 1. Clone Repository
 ```bash
 git clone https://github.com/<your-username>/minikube-django-todo.git
 cd minikube-django-todo
 
-###  Start Minikube
+2. Start Minikube
+
 minikube start --memory=4096 --cpus=2
 kubectl get nodes
 
-### Build Docker Image
+3. Build Docker Image
+
 eval $(minikube docker-env)
 docker build -t django-todo-app ./django-todo-app
 
-### Deploy App
+4. Deploy Django To-Do App
+
 kubectl apply -f k8s-manifests/django-deployment.yaml
 kubectl apply -f k8s-manifests/django-service.yaml
 
-### Access Django App:
+5. Access Django Application
+
 minikube service django-service
 
-D### eploy Monitoring
+6. Deploy Monitoring (Prometheus + Grafana)
+
 kubectl apply -f k8s-manifests/prometheus-deployment.yaml
 kubectl apply -f k8s-manifests/grafana-deployment.yaml
 kubectl apply -f k8s-manifests/monitoring-service.yaml
 
-### Monitoring Setup
+7. Access Monitoring Tools
 
-Prometheus scrapes metrics from Kubernetes.
-Grafana visualizes metrics with dashboards.
-Default Grafana Login:
-User: admin
+    Prometheus
+
+minikube service prometheus-service
+
+    Grafana
+
+minikube service grafana-service
+
+Default Grafana credentials:
+
+Username: admin
 Password: admin
+
+
 
 
 <img width="1916" height="1075" alt="Screenshot from 2025-08-26 02-23-01" src="https://github.com/user-attachments/assets/2770b3f2-0a6c-49b6-b720-2ea57ff3fe7a" />
