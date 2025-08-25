@@ -22,6 +22,11 @@ minikube-django-todo/
 │
 │── README.md
 
+<img width="1916" height="1075" alt="Screenshot from 2025-08-26 02-23-01" src="https://github.com/user-attachments/assets/2770b3f2-0a6c-49b6-b720-2ea57ff3fe7a" />
+<img width="1916" height="1075" alt="Screenshot from 2025-08-26 02-22-38" src="https://github.com/user-attachments/assets/2e34d0d5-e725-4a7c-a43f-23c2a85f70fd" />
+<img width="1916" height="1075" alt="Screenshot from 2025-08-26 02-26-22" src="https://github.com/user-attachments/assets/b8978501-900f-4ae7-bc54-e08bb51e8b2b" />
+
+
 ## ⚙️ Setup Instructions
 
 ### 1. Clone Repository
@@ -70,9 +75,4 @@ Username: admin
 Password: admin
 
 
-
-
-<img width="1916" height="1075" alt="Screenshot from 2025-08-26 02-23-01" src="https://github.com/user-attachments/assets/2770b3f2-0a6c-49b6-b720-2ea57ff3fe7a" />
-<img width="1916" height="1075" alt="Screenshot from 2025-08-26 02-22-38" src="https://github.com/user-attachments/assets/2e34d0d5-e725-4a7c-a43f-23c2a85f70fd" />
-<img width="1916" height="1075" alt="Screenshot from 2025-08-26 02-26-22" src="https://github.com/user-attachments/assets/b8978501-900f-4ae7-bc54-e08bb51e8b2b" />
 
